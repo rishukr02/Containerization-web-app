@@ -1,4 +1,4 @@
-# Containerized Web Application with PostgreSQL using Docker Compose and IPvlan
+# Containerized Web Application with PostgreSQL using Docker Compose and MACvlan
 
 
 ## Overview
