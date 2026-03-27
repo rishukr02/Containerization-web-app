@@ -124,57 +124,7 @@ docker ps
 
 ---
 
-## API Endpoints
 
-### Health Check
-
-```
-GET /health
-```
-
-Example:
-
-```bash
-docker run --rm --network custom_macvlan alpine/curl \
-http://192.168.10.201:3000/health
-```
-
----
-
-### Insert Record
-
-```
-POST /records
-```
-
-```bash
-docker run --rm --network custom_macvlan alpine/curl -X POST \
-http://192.168.10.201:3000/records \
--H "Content-Type: application/json" \
--d '{"data":"Testing volume persistence!"}'
-```
-
----
-
-### Fetch Records
-
-```
-GET /records
-```
-
-Response:
-
-```json
-[
-  {
-    "id": 1,
-    "data": "Testing volume persistence!",
-    "created_at": "2026-03-16T..."
-  }
-]
-```
-
----
 
 ## Volume Persistence Test
 
